@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B044137C196D24AA00333886 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B044137B196D24AA00333886 /* Foundation.framework */; };
+		B044137E196D24AA00333886 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B044137D196D24AA00333886 /* CoreGraphics.framework */; };
+		B0441380196D24AA00333886 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B044137F196D24AA00333886 /* UIKit.framework */; };
+		B0441386196D24AA00333886 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0441384196D24AA00333886 /* InfoPlist.strings */; };
+		B0441388196D24AA00333886 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0441387196D24AA00333886 /* main.m */; };
+		B044138C196D24AA00333886 /* CroutonAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B044138B196D24AA00333886 /* CroutonAppDelegate.m */; };
+		B044138F196D24AA00333886 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B044138D196D24AA00333886 /* Main_iPhone.storyboard */; };
+		B0441392196D24AA00333886 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0441390196D24AA00333886 /* Main_iPad.storyboard */; };
+		B0441395196D24AA00333886 /* CroutonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0441394196D24AA00333886 /* CroutonViewController.m */; };
+		B0441397196D24AA00333886 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0441396196D24AA00333886 /* Images.xcassets */; };
+		B044139E196D24AA00333886 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B044139D196D24AA00333886 /* XCTest.framework */; };
+		B044139F196D24AA00333886 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B044137B196D24AA00333886 /* Foundation.framework */; };
+		B04413A0196D24AA00333886 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B044137F196D24AA00333886 /* UIKit.framework */; };
+		B04413A8196D24AA00333886 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B04413A6196D24AA00333886 /* InfoPlist.strings */; };
+		B04413AA196D24AA00333886 /* CroutonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B04413A9196D24AA00333886 /* CroutonTests.m */; };
+		B04413B6196D25CD00333886 /* Crouton.m in Sources */ = {isa = PBXBuildFile; fileRef = B04413B5196D25CD00333886 /* Crouton.m */; };
+		B09A5540196D441200819022 /* CroutonStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B09A553F196D441200819022 /* CroutonStyle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B04413A1196D24AA00333886 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0441370196D24AA00333886 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0441377196D24AA00333886;
+			remoteInfo = Crouton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B0441378196D24AA00333886 /* Crouton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crouton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B044137B196D24AA00333886 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B044137D196D24AA00333886 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B044137F196D24AA00333886 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B0441383196D24AA00333886 /* Crouton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Crouton-Info.plist"; sourceTree = "<group>"; };
+		B0441385196D24AA00333886 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B0441387196D24AA00333886 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0441389196D24AA00333886 /* Crouton-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Crouton-Prefix.pch"; sourceTree = "<group>"; };
+		B044138A196D24AA00333886 /* CroutonAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CroutonAppDelegate.h; sourceTree = "<group>"; };
+		B044138B196D24AA00333886 /* CroutonAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CroutonAppDelegate.m; sourceTree = "<group>"; };
+		B044138E196D24AA00333886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		B0441391196D24AA00333886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		B0441393196D24AA00333886 /* CroutonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CroutonViewController.h; path = Crouton/CroutonViewController.h; sourceTree = "<group>"; };
+		B0441394196D24AA00333886 /* CroutonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CroutonViewController.m; path = Crouton/CroutonViewController.m; sourceTree = "<group>"; };
+		B0441396196D24AA00333886 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B044139C196D24AA00333886 /* CroutonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CroutonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B044139D196D24AA00333886 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B04413A5196D24AA00333886 /* CroutonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CroutonTests-Info.plist"; sourceTree = "<group>"; };
+		B04413A7196D24AA00333886 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B04413A9196D24AA00333886 /* CroutonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CroutonTests.m; sourceTree = "<group>"; };
+		B04413B4196D25CD00333886 /* Crouton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crouton.h; sourceTree = "<group>"; };
+		B04413B5196D25CD00333886 /* Crouton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crouton.m; sourceTree = "<group>"; };
+		B09A553E196D441200819022 /* CroutonStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CroutonStyle.h; sourceTree = "<group>"; };
+		B09A553F196D441200819022 /* CroutonStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CroutonStyle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0441375196D24AA00333886 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B044137E196D24AA00333886 /* CoreGraphics.framework in Frameworks */,
+				B0441380196D24AA00333886 /* UIKit.framework in Frameworks */,
+				B044137C196D24AA00333886 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0441399196D24AA00333886 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B044139E196D24AA00333886 /* XCTest.framework in Frameworks */,
+				B04413A0196D24AA00333886 /* UIKit.framework in Frameworks */,
+				B044139F196D24AA00333886 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B044136F196D24AA00333886 = {
+			isa = PBXGroup;
+			children = (
+				B04413B3196D24B500333886 /* Testing */,
+				B0441381196D24AA00333886 /* Crouton */,
+				B04413A3196D24AA00333886 /* CroutonTests */,
+				B044137A196D24AA00333886 /* Frameworks */,
+				B0441379196D24AA00333886 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0441379196D24AA00333886 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0441378196D24AA00333886 /* Crouton.app */,
+				B044139C196D24AA00333886 /* CroutonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B044137A196D24AA00333886 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B044137B196D24AA00333886 /* Foundation.framework */,
+				B044137D196D24AA00333886 /* CoreGraphics.framework */,
+				B044137F196D24AA00333886 /* UIKit.framework */,
+				B044139D196D24AA00333886 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0441381196D24AA00333886 /* Crouton */ = {
+			isa = PBXGroup;
+			children = (
+				B0441382196D24AA00333886 /* Supporting Files */,
+				B04413B4196D25CD00333886 /* Crouton.h */,
+				B04413B5196D25CD00333886 /* Crouton.m */,
+				B09A553E196D441200819022 /* CroutonStyle.h */,
+				B09A553F196D441200819022 /* CroutonStyle.m */,
+			);
+			path = Crouton;
+			sourceTree = "<group>";
+		};
+		B0441382196D24AA00333886 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0441396196D24AA00333886 /* Images.xcassets */,
+				B044138A196D24AA00333886 /* CroutonAppDelegate.h */,
+				B044138B196D24AA00333886 /* CroutonAppDelegate.m */,
+				B0441383196D24AA00333886 /* Crouton-Info.plist */,
+				B0441384196D24AA00333886 /* InfoPlist.strings */,
+				B0441387196D24AA00333886 /* main.m */,
+				B0441389196D24AA00333886 /* Crouton-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B04413A3196D24AA00333886 /* CroutonTests */ = {
+			isa = PBXGroup;
+			children = (
+				B04413A9196D24AA00333886 /* CroutonTests.m */,
+				B04413A4196D24AA00333886 /* Supporting Files */,
+			);
+			path = CroutonTests;
+			sourceTree = "<group>";
+		};
+		B04413A4196D24AA00333886 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B04413A5196D24AA00333886 /* CroutonTests-Info.plist */,
+				B04413A6196D24AA00333886 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B04413B3196D24B500333886 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				B044138D196D24AA00333886 /* Main_iPhone.storyboard */,
+				B0441390196D24AA00333886 /* Main_iPad.storyboard */,
+				B0441393196D24AA00333886 /* CroutonViewController.h */,
+				B0441394196D24AA00333886 /* CroutonViewController.m */,
+			);
+			name = Testing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0441377196D24AA00333886 /* Crouton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B04413AD196D24AA00333886 /* Build configuration list for PBXNativeTarget "Crouton" */;
+			buildPhases = (
+				B0441374196D24AA00333886 /* Sources */,
+				B0441375196D24AA00333886 /* Frameworks */,
+				B0441376196D24AA00333886 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crouton;
+			productName = Crouton;
+			productReference = B0441378196D24AA00333886 /* Crouton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B044139B196D24AA00333886 /* CroutonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B04413B0196D24AA00333886 /* Build configuration list for PBXNativeTarget "CroutonTests" */;
+			buildPhases = (
+				B0441398196D24AA00333886 /* Sources */,
+				B0441399196D24AA00333886 /* Frameworks */,
+				B044139A196D24AA00333886 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B04413A2196D24AA00333886 /* PBXTargetDependency */,
+			);
+			name = CroutonTests;
+			productName = CroutonTests;
+			productReference = B044139C196D24AA00333886 /* CroutonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0441370196D24AA00333886 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Crouton;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ACUZIO;
+				TargetAttributes = {
+					B044139B196D24AA00333886 = {
+						TestTargetID = B0441377196D24AA00333886;
+					};
+				};
+			};
+			buildConfigurationList = B0441373196D24AA00333886 /* Build configuration list for PBXProject "Crouton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B044136F196D24AA00333886;
+			productRefGroup = B0441379196D24AA00333886 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0441377196D24AA00333886 /* Crouton */,
+				B044139B196D24AA00333886 /* CroutonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0441376196D24AA00333886 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0441392196D24AA00333886 /* Main_iPad.storyboard in Resources */,
+				B0441397196D24AA00333886 /* Images.xcassets in Resources */,
+				B044138F196D24AA00333886 /* Main_iPhone.storyboard in Resources */,
+				B0441386196D24AA00333886 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B044139A196D24AA00333886 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04413A8196D24AA00333886 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0441374196D24AA00333886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0441388196D24AA00333886 /* main.m in Sources */,
+				B09A5540196D441200819022 /* CroutonStyle.m in Sources */,
+				B044138C196D24AA00333886 /* CroutonAppDelegate.m in Sources */,
+				B04413B6196D25CD00333886 /* Crouton.m in Sources */,
+				B0441395196D24AA00333886 /* CroutonViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0441398196D24AA00333886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04413AA196D24AA00333886 /* CroutonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B04413A2196D24AA00333886 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0441377196D24AA00333886 /* Crouton */;
+			targetProxy = B04413A1196D24AA00333886 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0441384196D24AA00333886 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0441385196D24AA00333886 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B044138D196D24AA00333886 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B044138E196D24AA00333886 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			path = Crouton;
+			sourceTree = "<group>";
+		};
+		B0441390196D24AA00333886 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0441391196D24AA00333886 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			path = Crouton;
+			sourceTree = "<group>";
+		};
+		B04413A6196D24AA00333886 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B04413A7196D24AA00333886 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B04413AB196D24AA00333886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B04413AC196D24AA00333886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B04413AE196D24AA00333886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Crouton/Crouton-Prefix.pch";
+				INFOPLIST_FILE = "Crouton/Crouton-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B04413AF196D24AA00333886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Crouton/Crouton-Prefix.pch";
+				INFOPLIST_FILE = "Crouton/Crouton-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B04413B1196D24AA00333886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Crouton.app/Crouton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Crouton/Crouton-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CroutonTests/CroutonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B04413B2196D24AA00333886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Crouton.app/Crouton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Crouton/Crouton-Prefix.pch";
+				INFOPLIST_FILE = "CroutonTests/CroutonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0441373196D24AA00333886 /* Build configuration list for PBXProject "Crouton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04413AB196D24AA00333886 /* Debug */,
+				B04413AC196D24AA00333886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B04413AD196D24AA00333886 /* Build configuration list for PBXNativeTarget "Crouton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04413AE196D24AA00333886 /* Debug */,
+				B04413AF196D24AA00333886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B04413B0196D24AA00333886 /* Build configuration list for PBXNativeTarget "CroutonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04413B1196D24AA00333886 /* Debug */,
+				B04413B2196D24AA00333886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0441370196D24AA00333886 /* Project object */;
+}
