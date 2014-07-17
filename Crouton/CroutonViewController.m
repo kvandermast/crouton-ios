@@ -23,7 +23,7 @@
 
 }
 - (IBAction)showTopAlert:(id)sender {
-   [Crouton showAlert:@"This is an alert" inView:self.view];
+   [[Crouton alert:@"This is an alert" inView:self.view] show];
 }
 
 
@@ -100,12 +100,16 @@
     [crouton show];
 }
 - (IBAction)showInfo:(id)sender {
-    [Crouton showInfo:@"It ain't a bad as it seems!" inView:self.view];
+    Crouton *crouton = [Crouton info:@"It ain't as bad as it seems!" inView:self.view];
+    
+    crouton.style.textSize = 24.0;
+    
+    [crouton show];
 }
 - (IBAction)pleaseWait:(id)sender {
-    self.waitCrouton = [Crouton pleaseWait:@"Please wait 5s..." inView:self.view];
+    self.waitCrouton = [Crouton pleaseWait:@"Please wait 10s..." inView:self.view];
 
-    [NSTimer scheduledTimerWithTimeInterval:5
+    [NSTimer scheduledTimerWithTimeInterval:10
                                      target:self
                                    selector:@selector(dismissWaitCrouton)
                                    userInfo:nil

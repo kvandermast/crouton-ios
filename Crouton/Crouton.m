@@ -25,9 +25,6 @@ enum CroutonBehaviour {
 
 @property (nonatomic, weak)     NSTimer             *messageTimer;
 
-@property (strong, nonatomic)   CroutonStyle        *style;
-@property (nonatomic)   enum    CroutonBehaviour    behaviour;
-
 @property (nonatomic)           CGFloat             screenWidth;
 @property (nonatomic)           CGFloat             screenHeight;
 @end
@@ -35,9 +32,11 @@ enum CroutonBehaviour {
 
 #define ALERT_BG_COLOR      [UIColor colorWithRed:255/255.0 green:85/255 blue:85.0/255.0 alpha:1.0f]
 #define ALERT_TEXT_COLOR    [UIColor colorWithRed:255/255.0 green:255/255 blue:255.0/255.0 alpha:1.0f]
+#define ALERT_TEXT_SIZE     18.0
 
 #define INFO_BG_COLOR       [UIColor colorWithRed:0/255.0f green:128/255.0f blue:163/255.0f alpha:1.0f]
 #define INFO_TEXT_COLOR     [UIColor colorWithRed:255/255.0 green:255/255 blue:255.0/255.0 alpha:1.0f]
+#define INFO_TEXT_SIZE      18.0
 
 #define PLEASE_WAIT_BG_COLOR [UIColor colorWithRed:0/255.0f green:0/255.0f blue:0/255.0f alpha:0.4f];
 
@@ -78,22 +77,24 @@ enum CroutonBehaviour {
 
 #pragma mark - Class methods
 
-+ (void) showAlert:(NSString *) message inView:(UIView *)currentView
-{
++ (Crouton *) alert:(NSString *)message inView:(UIView *)currentView {
+
     CroutonStyle *style = [[CroutonStyle alloc] initStyleWithBackground:ALERT_BG_COLOR
                                                               textColor:ALERT_TEXT_COLOR
-                                                               textSize:14.0];
+                                                               textSize:ALERT_TEXT_SIZE];
+    Crouton *crouton = [[Crouton alloc] initWithMessage:message forView:currentView style:style];
     
-    [Crouton show:message inView:currentView withStyle:style];
+    return crouton;
 }
 
-+ (void) showInfo:(NSString *) message inView:(UIView *)currentView
-{
++ (Crouton *) info:(NSString *)message inView:(UIView *)currentView {
     CroutonStyle *style = [[CroutonStyle alloc] initStyleWithBackground:INFO_BG_COLOR
                                                               textColor:INFO_TEXT_COLOR
-                                                               textSize:14.0];
+                                                               textSize:INFO_TEXT_SIZE];
+  
+    Crouton *crouton = [[Crouton alloc] initWithMessage:message forView:currentView style:style];
     
-    [Crouton show:message inView:currentView withStyle:style];
+    return crouton;
 }
 
 + (Crouton *) pleaseWait:(NSString *) message inView:(UIView *) currentView {

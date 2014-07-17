@@ -10,14 +10,17 @@
 #import "CroutonStyle.h"
 
 @interface Crouton : NSObject
+@property (strong, nonatomic)   CroutonStyle        *style;
+@property (nonatomic)   enum    CroutonBehaviour    behaviour;
+
 - (id) initWithMessage:(NSString *) message forView:(UIView *) currentView style:(CroutonStyle *) style;
 
 + (void) show:(NSString *) message inView:(UIView *) currentView withStyle:(CroutonStyle*) style;
 
-+ (void) showAlert:(NSString *) message inView:(UIView *) currentView;
-+ (void) showInfo:(NSString *) message inView:(UIView *) currentView;
-
++ (Crouton *) alert:(NSString *) message inView:(UIView *) currentView;
++ (Crouton *) info:(NSString *) message inView:(UIView *) currentView;
 + (Crouton *) pleaseWait:(NSString *) message inView:(UIView *) currentView;
+
 + (Crouton *) customView:(UIView *) view inView:(UIView *) currentView;
 
 - (void) show;
